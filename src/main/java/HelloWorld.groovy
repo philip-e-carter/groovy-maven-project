@@ -1,16 +1,9 @@
-println "asdf"
-def sum = 3+5
-println sum
-def tasks = ["Go", "Run", "Fix"]
+println "can run random groovy statements in a .groovy script, no class and methods needed, as long there isn't also a java class in the file"
 
-//def hello() {
-//    for (task in tasks) {
-//        def str = "Hello "
-//        println "$str" + "$task";
-//    }
-//}
-
-def hello ()
-{
-    "Hello World"
+def add(numbers) {
+    def sum = 0;
+    for (number in numbers) {
+        sum = sum + number
+    }
+    sum // "return" is not needed
 }
