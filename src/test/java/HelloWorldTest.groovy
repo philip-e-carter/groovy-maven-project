@@ -20,5 +20,23 @@ class HelloWorldTest extends Specification {
             result.size() == 3;
     }
 
+    def "groovy types can change at runtime" () {
+        given: "the class to be tested"
+            def helloWorld = new HelloWorld()
+        when:
+            def result = helloWorld.changeTypeAtRuntime()
+        then:
+            result == "hello"
+    }
+
+    def "groove has gstrings" () {
+        given: "the class to be tested"
+            def helloWorld = new HelloWorld()
+        when:
+            def result = helloWorld.getHelloMessage("Joe")
+        then:
+            result == "Hello Joe"
+    }
+
 }
 

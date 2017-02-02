@@ -12,3 +12,13 @@ def getRange() {
     def rng = 1..3
     rng
 }
+
+def changeTypeAtRuntime() {
+    def var = 1;
+    var = "hello"
+    var
+}
+
+def getHelloMessage(String s) {
+    "Hello ${s}"
+}
