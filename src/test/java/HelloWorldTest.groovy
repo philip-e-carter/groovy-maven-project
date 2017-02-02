@@ -11,5 +11,14 @@ class HelloWorldTest extends Specification {
             a == 2;
     }
 
+    def "test a groovy 'range'" () {
+        given: "a range"
+            def helloWorld = new HelloWorld();
+        when: "stuff happens"
+            def result = helloWorld.getRange();
+        then:
+            result.size() == 3;
+    }
+
 }
 

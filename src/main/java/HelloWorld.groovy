@@ -7,3 +7,8 @@ def add(numbers) {
     }
     sum // "return" is not needed
 }
+
+def getRange() {
+    def rng = 1..3
+    rng
+}
